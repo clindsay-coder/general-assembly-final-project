@@ -1,0 +1,499 @@
+
+
+/***********************
+    BASE SETUP
+************************/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 95%;
+}
+
+/***********************
+    BASE FONT STYLES
+************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsla(210, 100%, 20%, 1);
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Solway', serif;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: 'Solway', serif;
+    position: absolute;
+    z-index: 20;
+    top: 60%;
+    left: 20%;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-family: 'Solway', serif;
+    padding: 5px;
+}
+
+a {
+    text-shadow: -1px -1px 0 hsla(210, 100%, 20%, 1),  
+    1px -1px 0 hsla(210, 100%, 20%, 1),
+    -1px 1px 0 hsla(210, 100%, 20%, 1),
+     1px 1px 0 hsla(210, 100%, 20%, 1);
+    color: white;
+    text-decoration: none;
+}
+
+/***********************
+    BASE GENERAL STYLES
+************************/
+
+
+
+ .logo a {
+    position: absolute;
+    font-family: 'Solway', serif;
+    font-size: 3rem;
+    padding: 10px 0 20px 10px;
+ }
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: hsla(187, 52%, 80%, 1);
+    z-index: 30;
+    transition: all 1s;
+    width: 100%;
+}
+
+.header-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav {
+    width: 100% 
+}
+
+
+header ul {
+    display: none;
+    width: 100%;
+    margin: auto;
+    text-align: right;
+    padding: 0 0 20px;
+}
+
+header li {
+    font-family: 'Solway', serif;
+    margin: 0 0 2rem;
+    padding: 0 0 1rem;
+    text-shadow: 1px 1px 1px #ffffff,  
+    1px 1px 1px #ffffff,
+    1px 1px 1px #ffffff,
+     1px 1px 1px #ffffff;
+    color: hsla(210, 100%, 20%, 1);
+    border-bottom: 2px solid #ffffff;
+    font-size: 2rem;
+}
+
+.icon {
+    padding: 15px 0 20px 10px;
+    color: white;
+    font-size: 2rem;
+}
+p {
+    margin: 15px 0 0;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+
+/***********************
+    LANDING PAGE
+************************/
+
+
+.central-item { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 10px 0 20px;
+    font-size: 5rem;
+    font-family: 'Solway', serif;
+    color: #000000;
+}
+
+
+/***********************
+    MAIN
+************************/
+.main-info {
+    border-width: 3px;
+    border-style: double;
+    border-color: hsla(210, 100%, 20%, 1);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0 0 0;
+}
+
+.img-space {
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image-space-main {
+    background-image: url('../assets/images/cat_coffee.jpg');
+}
+
+.image-space-menu {
+    background-image: url('../assets/images/food-cropped.jpg');
+}
+
+.image-space-events {
+    background-image: url('../assets/images/yoga.jpg');
+}
+.image-space-theatre {
+    background-image: url('../assets/images/cafe.jpg');
+}
+.image-space-workshops {
+    background-image: url('../assets/images/artclass.jpg');
+}
+
+.image-space-location {
+    background-image: url('../assets/images/outside.jpg');
+}
+
+.block {
+    margin: 10px 0;
+    position: relative;
+}
+
+.block img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+/***************************
+    MENU
+****************************/
+
+
+.menu-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0 50px;
+}
+.menu-item-breakfast,
+.menu-item-lunch,
+.menu-item-dinner,
+.menu-item-drinks {
+    width: 50%;
+    padding: 30px 0 10px;
+    border-bottom: 3px solid hsla(210, 100%, 20%, 1);
+}
+
+.hide-menu-breakfast,
+.hide-menu-lunch,
+.hide-menu-dinner,
+.hide-menu-drinks {
+    display:none;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+/***********************
+    LOCATION PAGE
+************************/
+.location-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.column {
+    margin: 20px 5px;
+    position: relative;
+}
+.column img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+/***********************
+    FOOTER
+************************/
+footer {
+    background-color: hsla(187, 52%, 80%, 1);
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    color: #ffffff;
+    font-size: 4rem;
+    text-shadow: none;
+}
+
+.social {
+    margin: 20px 5px;
+}
+
+/***************************
+    MEDIA QUERIES MAIN PAGE
+****************************/
+
+@media (min-width: 769px) {
+
+html{
+    font-size: 60%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: left;
+    
+}
+
+.main-info  {
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.main-section > div:nth-child(3n+1) {
+    margin-right: 2%;
+}
+
+.regular {
+    width: 49%;
+}
+
+.location-section {
+     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+}
+
+@media (min-width: 990px) {
+
+    html{
+        font-size: 70%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+html {
+    font-size: 90%;
+}
+
+.img-space {
+    height: 100vh;
+}
+
+.icon {
+    display: none;
+}
+
+header nav {
+	display: block;
+    text-align: right;
+}
+
+header ul {
+    display: block !important;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    padding: 20px 20px 0 0;
+    border: none;
+}
+
+.full-page {
+    background-color: hsla(187, 52%, 80%, 0);
+}
+
+
+.main-section > div:nth-child(3n+1) {
+    margin-right: 0;
+}
+
+.main-section > div:nth-child(2n+1) {
+    margin-right: 2%;
+}
+
+.block {
+    width: 49%;
+}
+.location-section {
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.column {
+    width: 49%;
+}
+.location-section div:nth-of-type(1) {
+    order: 1;
+}
+
+.location-section div:nth-of-type(2) {
+    order: 2;
+}
+
+.location-section div:nth-of-type(3) {
+    order: 4;
+}
+.location-section div:nth-of-type(4) {
+    order: 3;
+}
+.location-section div:nth-of-type(5) {
+    order: 5;
+}
+
+.location-section div:nth-of-type(6) {
+    order: 6;
+}
+
+.location-section div:nth-of-type(7) {
+    order: 8;
+}
+.location-section div:nth-of-type(8) {
+    order: 7;
+}
+.location-section div:nth-of-type(9) {
+    order: 9;
+}
+.location-section div:nth-of-type(10) {
+    order: 10;
+}
+
+
+
+footer {
+    margin: 20px 0 0 0;
+}
+
+
+/***************************
+    HOVER CHANGE
+****************************/
+
+.location,
+.menu,
+.events,
+.workshops, 
+.theatre {
+    transition: .3s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 30%;
+  margin: 0;
+} 
+
+.location-img {
+    opacity: 1;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.box:hover .location-img {
+    opacity: 0.3;
+  }
+  
+.box:hover .location {
+    opacity: 1;
+}
+
+.menu-img {
+    opacity: 1;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.box:hover .menu-img {
+    opacity: 0.3;
+}
+  
+.box:hover .menu {
+    opacity: 1;
+}
+
+.events-img {
+    opacity: 1;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.box:hover .events-img {
+    opacity: 0.3;
+  }
+  
+.box:hover .events {
+    opacity: 1;
+}
+
+  .workshops-img {
+    opacity: 1;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.box:hover .workshops-img {
+    opacity: 0.3;
+}
+  
+  .box:hover .workshops {
+    opacity: 1;
+}
+
+  .theatre-img {
+    opacity: 1;
+    transition: .3s ease;
+    backface-visibility: hidden;
+}
+
+.box:hover .theatre-img {
+    opacity: 0.3;
+}
+  
+  .box:hover .theatre {
+    opacity: 1;
+}
+
+}
